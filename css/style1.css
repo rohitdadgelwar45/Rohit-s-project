@@ -1,0 +1,140 @@
+/*CSS Reset*/
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+/* CSS Variables */
+:root {
+   --navbar-height: 49px;
+}
+
+/* navigation bar */
+#navbar {
+   display: flex;
+   align-items: center;
+
+}
+
+#navbar::before {
+   content: "";
+   background-color: black;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 1.15;
+
+}
+
+/* Navigation bar : logo and image  */
+#logo img {
+   margin: 10px;
+}
+
+#logo img {
+   height: 59px;
+   margin: 3px 6px;
+}
+
+/* navigation bar : list styling  */
+#navbar {
+   position: relative;
+}
+
+#navbar ul {
+   display: flex;
+}
+
+
+#navbar ul li {
+   /* color: white;  */
+   list-style: none;
+   font-size: 1.3rem;
+}
+
+#navbar ul li a {
+   color: white;
+   display: block;
+   padding: 5px 10px;
+   font-size: 33px;
+   margin: 10px 40px;
+   border-radius: 12px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover {
+   color: black;
+   background-color: white;
+}
+/* Home Section  */
+
+#home{
+   display: flex;
+   flex-direction: column;
+   padding: 3px 200px;
+   height: 400px;
+   justify-content: center;
+   align-items: center;
+}
+
+#home::before{
+   content: "";
+   background: url('../img/food3.jpg') no-repeat center center/cover;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.89; 
+}
+
+#home h1{
+   color: white;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+#home p{
+   padding: 4 px;
+   color: white;
+   text-align: center;
+   font-size: 1.3rem;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Services Section  */
+
+#services{
+   margin: 34px;
+   display: flex;
+}
+#services .box{
+    border: 2px solid red;
+}
+
+#services .box img{
+   height: 156px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+   font-size: 2.8rem;
+   padding: 12px;
+}
+.btn{
+   padding: 6px 12px;
+    margin: 12px 28px;
+    /* border: 2px solid white; */
+    border-radius: 8px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+.center{
+   text-align: center;
+}
